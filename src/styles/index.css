@@ -1,0 +1,127 @@
+/*
+Tailwind
+===================================== */
+
+@tailwind base;
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 300;
+    src: url(/fonts/manrope/Manrope-Light.woff) format("woff");
+}
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 400;
+    src: url(/fonts/manrope/Manrope-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 500;
+    src: url(/fonts/manrope/Manrope-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 600;
+    src: url(/fonts/manrope/Manrope-SemiBold.woff) format("woff");
+}
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 700;
+    src: url(/fonts/manrope/Manrope-Bold.woff) format("woff");
+}
+
+@tailwind components;
+
+.select-custom:not(:last-child) {
+    @apply mb-4;
+}
+
+.select-custom__control {
+    @apply flex-1;
+    @apply bg-secondary-dark !important;
+    @apply font-semibold;
+    @apply shadow-xl;
+    @apply text-white;
+    @apply h-12;
+    @apply pl-4;
+    @apply border-none !important;
+    @apply cursor-pointer !important;
+    @apply transition-all !important;
+    @apply duration-200 !important;
+}
+
+.select-custom__control:hover {
+    @apply shadow-xlhover;
+    @apply bg-secondary-darklighten !important;
+}
+
+.select-custom__value-container {
+    @apply p-0 !important;
+    @apply flex-no-wrap !important;
+}
+
+.select-custom__single-value,
+.select-custom__multi-value__label {
+    @apply text-white !important;
+    @apply text-base !important;
+}
+
+.select-custom__multi-value {
+    @apply bg-secondary-dark !important;
+}
+
+.select-custom__indicators {
+    @apply border-l-2;
+    @apply border-dark;
+}
+
+.select-custom__indicator-separator {display: none; }
+
+.nav-item-active .nav-item-sep {
+    @apply bg-primary;
+}
+
+.nav-item-active:hover .nav-item-sep {
+    @apply bg-primarydarken;
+}
+
+.nav-item-active .nav-item-icon {
+    @apply text-primary;
+    @apply flex;
+}
+
+.nav-item-active:hover .nav-item-icon {
+    @apply text-primarydarken !important;
+}
+
+.nav-item-active .nav-item-title {
+    @apply text-primary;
+    @apply font-bold;
+}
+
+.nav-item-active:hover .nav-item-title:hover {
+    @apply text-primarydarken;
+}
+
+@tailwind utilities;
+
+
+/*
+Line clamp
+===================================== */
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.lc-1 { -webkit-line-clamp: 1; }
+.lc-2 { -webkit-line-clamp: 2; }
+.lc-3 { -webkit-line-clamp: 3; }
+
+
+/*
+Drop shadow filter
+===================================== */
+
+.filter-shadow { filter: drop-shadow(15px -5px 6px rgb(0, 0, 0, 0.20)); }

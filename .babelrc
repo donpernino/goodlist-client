@@ -1,0 +1,25 @@
+{
+  "presets": ["react-app"],
+  "plugins": [
+    ["styled-components", { "ssr": true }],
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "plugins": [
+            {
+              "removeAttrs": { "attrs": "(data-name)" }
+            },
+            {
+              "cleanupIDs": false
+            },
+            {
+              "removeDoctype": true
+            }
+          ]
+        }
+      }
+    ]
+  ]
+}
+  
