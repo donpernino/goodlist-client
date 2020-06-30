@@ -29,7 +29,7 @@ import PrivateRoute from "./components/PrivateRoute";
 
 // apollo client setup
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql",
+  uri: `${process.env.REACT_APP_DB_GRAPHQL}`,
   cache: new InMemoryCache()
 });
 
