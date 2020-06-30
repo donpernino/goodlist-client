@@ -84,10 +84,10 @@
   },
   "scripts": {
     "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
-    "dev:start": "env-cmd -f .env npm run build:style && node scripts/start.js",
+    "dev:start": "env-cmd -f .env.local npm run build:style && node scripts/start.js",
     "start": "npm run build:style && node scripts/start.js",
-    "dev:build": "env-cmd -f .env node scripts/build.js",
-    "build": "node scripts/build.js",
+    "dev:build": "env-cmd -f .env.local node scripts/build.js",
+    "build": "env-cmd -f .env.prod node scripts/build.js",
     "dev:test": "env-cmd -f .env node scripts/test.js",
     "test": "node scripts/test.js"
   },
