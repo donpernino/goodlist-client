@@ -45,6 +45,7 @@
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.0",
     "lodash": "^4.17.15",
+    "metascraper": "^5.12.6",
     "mini-css-extract-plugin": "0.8.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.5.0",
@@ -87,7 +88,7 @@
     "dev:start": "env-cmd -f .env.local npm run build:style && node scripts/start.js",
     "start": "npm run build:style && node scripts/start.js",
     "dev:build": "env-cmd -f .env.local node scripts/build.js",
-    "build": "env-cmd -f .env.prod node scripts/build.js",
+    "build": "node scripts/build.js",
     "dev:test": "env-cmd -f .env node scripts/test.js",
     "test": "node scripts/test.js"
   },
