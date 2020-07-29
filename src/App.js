@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./styles/tailwind.css";
 import "./styles/index.css";
 import "./styles/circular-progress.css";
@@ -6,7 +6,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { AppProvider } from "./context/appContext";
-import { AuthProvider, AuthContext } from "./context/authContext";
+import { AuthProvider } from "./context/authContext";
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,7 +24,6 @@ import Home from "./components/Pages/Home/Home";
 import MovieList from "./components/Pages/MovieList";
 import SerieList from "./components/Pages/SerieList";
 import BookList from "./components/Pages/BookList";
-import SearchModal from "./components/Modal/SearchModal";
 import PrivateRoute from "./components/PrivateRoute";
 
 // apollo client setup

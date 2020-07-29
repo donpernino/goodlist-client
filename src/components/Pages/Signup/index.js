@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { withRouter, redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import app from '../../../base';
 
 function SignUp({ history }) {

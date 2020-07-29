@@ -1,5 +1,5 @@
 import React, { useContext, useCallback } from "react";
-import { Redirect, withRouter, useHistory } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { AuthContext } from "../../context/authContext";
 import { NavLink } from "react-router-dom";
 import LoginSvg from '../../static/icons/login.svg';
